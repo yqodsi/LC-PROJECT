@@ -1,42 +1,81 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+
+.img-accordion {
+  width: 100%;
+  max-width: 1440px;
+  height: 70vh;
+  display: flex;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.accordion-item {
+  height: 100%;
+  flex: 1;
+
+  /* transform: skew(5deg); */
+  cursor: pointer;
+  position: relative;
+  transition: flex 0.3s;
+  overflow: hidden;
+  background-color: #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.accordion-item img {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.card {
-  padding: 2em;
+.accordion-item p {
+  border-radius: 30px;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  font-size: 24px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  padding: 10px;
+  /* transform: rotate(-90deg); */
+  transform-origin: top left;
+  transition: all 0.3s;
 }
 
-.read-the-docs {
-  color: #888;
+.accordion-item:hover p {
+  /* transform: rotate(0); */
+  bottom: 20px;
+  left: 20px;
+
+
+}
+
+.accordion-item:hover {
+  flex: 4;
+}
+
+/* Add this CSS to your App.css or a separate CSS file */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(0); /* Start with the header visible */
+  transition: transform 3s ease-in-out; /* Add a smooth sliding animation */
+  z-index: 1; /* Ensure the header is on top of other content */
+}
+
+.header.hidden {
+  transform: translateY(-100%); /* Slide the header out of view */
+  pointer-events: none; /* Make the hidden header non-interactive */
 }
