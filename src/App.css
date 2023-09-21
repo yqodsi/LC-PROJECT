@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: roboto;
+  font-family: 'Ubuntu', sans-serif; 
 }
 
 
@@ -38,20 +38,28 @@
   position: absolute;
   bottom: -100px;
   left: 0;
-  font-size: 24px;
-  text-transform: uppercase;
-  white-space: nowrap;
-  background-color: rgb(255, 255, 255);
-  color: #000;
+  font-size: 14px;
+  font-weight: 200;
+
+ 
+ 
+  color: #ffff;
   padding: 10px;
   /* transform: rotate(-90deg); */
   transform-origin: top left;
   transition: all 0.3s;
 }
+.accordion-item span {
+  font-weight: 400;
+  font-size: 25px;
+
+ 
+
+}
 
 .accordion-item:hover p {
   /* transform: rotate(0); */
-  bottom: 20px;
+  bottom: 10px;
   left: 20px;
 
 
