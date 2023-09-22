@@ -36,13 +36,13 @@
 .accordion-item p {
   border-radius: 30px;
   position: absolute;
-  bottom: -100px;
+  bottom: -30px;
   left: 0;
   font-size: 14px;
   font-weight: 200;
 
  
- 
+  white-space: nowrap;
   color: #ffff;
   padding: 10px;
   /* transform: rotate(-90deg); */
