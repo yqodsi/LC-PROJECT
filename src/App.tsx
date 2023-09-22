@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-      <div
+      {/* <div
         className="navbar bg-white text-black sticky z-10"
         style={{
           opacity: "0.4",
@@ -33,7 +33,7 @@ function App() {
         }}
       >
         <a className="btn btn-ghost normal-case text-xl"></a>
-      </div>
+      </div> */}
       {/* <img src="/IMMSITO/Casa/pexels-vecislavas-popa-1571463.jpg" alt="" /> */}
       <div className="img-accordion">
         <div className="accordion-item">
