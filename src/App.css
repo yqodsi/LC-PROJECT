@@ -10,8 +10,9 @@
 .img-accordion {
   width: 100%;
   max-width: 1440px;
-  height: 70vh;
+  height: 80vh;
   display: flex;
+  /* flex-direction: column; */
 }
 
 .accordion-item {

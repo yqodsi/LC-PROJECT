@@ -13,10 +13,10 @@ export default {
           secondary: "#765c96",
           accent: "#5f3f4d",
           neutral: "#3d4451",
-          "base-100": "#3d3d3d", // background
+          "base-100": "#00000", // background
           "base-200": "#f9fafb", // button
           "base-300": "#f9fafe", // button hover
-          // "base-content": "#ffff2", // text
+          "base-content": "#F1F6F9", // text
         },
       },
       "dark",
