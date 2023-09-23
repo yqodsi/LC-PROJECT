@@ -1,11 +1,13 @@
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Loader from "./components/Loader";
 
 function App() {
   return (
     <>
       <Header />
+      <Loader duration={10000} />
       <div className="containere">
         <div className="img-accordion ">
           <div className="accordion-item">
