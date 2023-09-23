@@ -1,28 +1,8 @@
-// import { useEffect } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 
 function App() {
-  // const [count, setCount] = useState(0)
-  // const [isHeaderVisible, setIsHeaderVisible] = useState(true);
-  // const handleScroll = () => {
-  //   if (window.scrollY > 100) {
-  //     setIsHeaderVisible(false); // Hide the header when scrolled down 100 pixels
-  //   } else {
-  //     setIsHeaderVisible(true); // Show the header when scrolled up
-  //   }
-  // };
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
-
   return (
     <>
       <Header />
