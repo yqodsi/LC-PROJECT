@@ -1,17 +1,24 @@
 import "../App.css";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
-import Loader from "../components/Loader";
+// import Hero from "../components/Hero";
+// import Loader from "../components/Loader";
 import { useRef } from "react";
 
 function Home() {
   const heroSection = useRef(null);
   const scrollDown = () => {
-    window.scrollTo({
-      top: heroSection.current.offsetTop,
-      behavior: "smooth",
-    });
+    const section = heroSection.current as HTMLElement | null;
+    if (section) {
+      const offsetTop = section.offsetTop;
+      if (offsetTop !== undefined) {
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth",
+        });
+      }
+    }
   };
+
   return (
     <>
       <Header />
