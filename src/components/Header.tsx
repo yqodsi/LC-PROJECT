@@ -25,9 +25,9 @@ function Header() {
     <header
       className={`fixed top-0 w-full  shadow-lg transition-transform duration-300 z-10 h-20  bg-[#3282B8]`}
     >
-      <nav className="flex justify-between items-center p-4">
+      <nav className="flex justify-between  items-center p-4">
         <div>
-          <img width={35} src="/logos/nero.png" alt="" className="mr-10" />
+          <img width={120} src="/logos/log.png" alt="" className="mr-10" />
         </div>
         <ul className="flex items-center">
           <li className="mx-4">
