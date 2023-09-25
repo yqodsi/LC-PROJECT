@@ -9,8 +9,8 @@
 
 .img-accordion {
   width: 100%;
-  max-width: 1440px;
-  height: 80vh;
+  /* max-width: 1440px; */
+  height: 100vh;
   display: flex;
   /* flex-direction: column; */
 }
@@ -87,4 +87,54 @@
 .header.hidden {
   transform: translateY(-100%); /* Slide the header out of view */
   pointer-events: none; /* Make the hidden header non-interactive */
+}
+
+.scroll-down2{
+  width: 40px;
+  height: 80px;
+  border: 2px solid #ffff;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+
+  &:before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 20px;
+      width: 6px;
+      height: 6px;
+      border-radius: 100%;
+      transform: translateX(-50%);
+      background: #ffff;
+      animation: scrollDown2 1.5s ease infinite;
+  }
+  &:after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 5px;
+      width: 6px;
+      height: 15px;
+      border-radius: 3px;
+      transform: translateX(-50%);
+      background: #ffff;
+  }
+}
+
+@keyframes scrollDown2{
+  0%{
+      transform: translate(-50%, 0px);
+      opacity: 0;
+  }
+  50%{
+      transform: translate(-50%, 8px);
+      opacity: 1;
+  }
+  100%{
+      transform: translate(-50%, 16px);
+      opacity: 0;
+  }
 }
