@@ -1,5 +1,6 @@
 import "../App.css";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 // import Hero from "../components/Hero";
 // import Loader from "../components/Loader";
 import { useRef } from "react";
@@ -42,7 +43,7 @@ function Home() {
 
             <p className="flex flex-col">
               {" "}
-              <img style={{ width: "50px" }} src="/logos/blu.png" alt="" />{" "}
+              <img style={{ width: "30px" }} src="/logos/blu.png" alt="" />{" "}
               <span className="main_title">Residenziale</span>
               <div>PROGETTAZIONE DI IMPIANTI ELETTRICI RESIDENZIALI</div>
             </p>
@@ -52,7 +53,7 @@ function Home() {
             <p className="flex flex-col">
               {" "}
               <img
-                style={{ width: "50px" }}
+                style={{ width: "30px" }}
                 src="/logos/gialli.png"
                 alt=""
               />{" "}
@@ -71,7 +72,7 @@ function Home() {
             <p className="flex flex-col">
               {" "}
               <img
-                style={{ width: "50px" }}
+                style={{ width: "30px" }}
                 src="/logos/ROSSO.png"
                 alt=""
               />{" "}
@@ -93,7 +94,7 @@ function Home() {
             <p className="flex flex-col">
               {" "}
               <img
-                style={{ width: "50px" }}
+                style={{ width: "30px" }}
                 src="/logos/verde.png"
                 alt=""
               />{" "}
@@ -115,7 +116,7 @@ function Home() {
             <p className="flex flex-col">
               {" "}
               <img
-                style={{ width: "50px" }}
+                style={{ width: "30px" }}
                 src="/logos/nero.png"
                 alt=""
               />{" "}
@@ -127,31 +128,28 @@ function Home() {
             </p>
           </div>
         </div>
-        <div className="hero min-h-screen bg-base-200" ref={heroSection}>
-          <div className="hero-content flex-col lg:flex-row w-full">
-            <span className="flex-1 text-5xl flex justify-center">
-              CHE SIAMO
+        <div className="hero  pt-5" ref={heroSection}>
+          <div className="hero-content flex-col w-full">
+            <span className="text-5xl flex justify-center">
+              Dall'Idea alla Realtà:
             </span>
-            <div className="flex-1">
-              <p className="py-6">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
-                vero ipsa, architecto dicta porro minus facilis culpa error hic
-                aliquam sequi. Natus veniam iusto atque veritatis accusantium
-                provident fuga nisi culpa eligendi assumenda quos doloribus
-                reprehenderit molestias, dolorum reiciendis eius. Reprehenderit
-                ex veritatis ea temporibus incidunt earum at voluptate ab culpa
-                repellendus. Modi saepe recusandae debitis quae impedit nisi
-                fugiat voluptatum neque aliquid voluptas, porro non
-                necessitatibus! Fugiat, nam quasi temporibus aperiam ea
-                veritatis nulla a velit optio, ad exercitationem nisi molestiae
-                iure possimus? Nemo, perspiciatis, eum animi aut alias facere
-                accusantium molestiae, accusamus maxime qui nobis repellendus
-                quia vel.
+            <span className="text-5xl flex justify-center">
+              Progettazione Elettrica
+            </span>
+            <div className="w-full flex justify-center items-center flex-col">
+              <p className="py-6 text-center max-w-lg">
+                Benvenuti nel nostro studio di progettazione elettrica, un luogo
+                dove l'energia prende vita e le idee si trasformano in realtà.
+                Siamo un team giovane e dinamico, animato dalla passione per
+                l'innovazione nell'ambito energetico. La nostra missione é
+                plasmare un futuro in cui l'energia sia sostenibile e
+                accessibile a tutti.
               </p>
-              <button className="btn btn-primary">Get Started</button>
+              <button className="btn">Scopri</button>
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );
