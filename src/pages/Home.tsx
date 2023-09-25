@@ -6,18 +6,18 @@ import { useRef } from "react";
 
 function Home() {
   const heroSection = useRef(null);
-  const scrollDown = () => {
-    const section = heroSection.current as HTMLElement | null;
-    if (section) {
-      const offsetTop = section.offsetTop;
-      if (offsetTop !== undefined) {
-        window.scrollTo({
-          top: offsetTop,
-          behavior: "smooth",
-        });
-      }
-    }
-  };
+  // const scrollDown = () => {
+  //   const section = heroSection.current as HTMLElement | null;
+  //   if (section) {
+  //     const offsetTop = section.offsetTop;
+  //     if (offsetTop !== undefined) {
+  //       window.scrollTo({
+  //         top: offsetTop,
+  //         behavior: "smooth",
+  //       });
+  //     }
+  //   }
+  // };
 
   return (
     <>
@@ -25,7 +25,7 @@ function Home() {
 
       {/* <Loader duration={4000} /> */}
       <div className="containere">
-        <div
+        {/* <div
           className="scroll-down2 absolute z-10 "
           style={{
             top: "80%",
@@ -34,7 +34,7 @@ function Home() {
             cursor: "pointer",
           }}
           onClick={scrollDown}
-        ></div>
+        ></div> */}
 
         <div className="img-accordion ">
           <div className="accordion-item">
