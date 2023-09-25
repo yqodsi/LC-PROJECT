@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif; 
+  font-family: 'Manrope', sans-serif;
 }
 
 
@@ -88,7 +88,7 @@
   transform: translateY(-100%); /* Slide the header out of view */
   pointer-events: none; /* Make the hidden header non-interactive */
 }
-
+/* 
 .scroll-down2{
   width: 40px;
   height: 80px;
@@ -137,4 +137,4 @@
       transform: translate(-50%, 16px);
       opacity: 0;
   }
-}
+} */

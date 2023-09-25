@@ -130,10 +130,10 @@ function Home() {
         </div>
         <div className="hero bg-primary  py-5" ref={heroSection}>
           <div className="hero-content flex-col w-full">
-            <span className="text-5xl flex justify-center">
+            <span className="text-5xl font-[500] flex justify-center">
               Dall'Idea alla Realtà:
             </span>
-            <span className="text-5xl flex justify-center">
+            <span className="text-5xl font-[500] flex justify-center">
               Progettazione Elettrica
             </span>
             <div className="w-full flex justify-center items-center flex-col ">
