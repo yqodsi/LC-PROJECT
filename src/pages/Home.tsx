@@ -128,7 +128,7 @@ function Home() {
             </p>
           </div>
         </div>
-        <div className="hero  pt-5" ref={heroSection}>
+        <div className="hero bg-primary  py-5" ref={heroSection}>
           <div className="hero-content flex-col w-full">
             <span className="text-5xl flex justify-center">
               Dall'Idea alla Realtà:
@@ -136,8 +136,8 @@ function Home() {
             <span className="text-5xl flex justify-center">
               Progettazione Elettrica
             </span>
-            <div className="w-full flex justify-center items-center flex-col">
-              <p className="py-6 text-center max-w-lg">
+            <div className="w-full flex justify-center items-center flex-col ">
+              <p className="py-6 text-center max-w-3xl">
                 Benvenuti nel nostro studio di progettazione elettrica, un luogo
                 dove l'energia prende vita e le idee si trasformano in realtà.
                 Siamo un team giovane e dinamico, animato dalla passione per
@@ -145,7 +145,7 @@ function Home() {
                 plasmare un futuro in cui l'energia sia sostenibile e
                 accessibile a tutti.
               </p>
-              <button className="btn">Scopri</button>
+              <button className="btn btn-secondary">Scopri</button>
             </div>
           </div>
         </div>

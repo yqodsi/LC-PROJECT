@@ -9,9 +9,9 @@ export default {
     themes: [
       {
         mytheme: {
-          primary: "#372951",
-          secondary: "#765c96",
-          accent: "#011eb3",
+          primary: "#16161D", // inter miami theme
+          secondary: "#011eb3",
+          accent: "#37cdbe",
           neutral: "#3d4451",
           "base-100": "#00000", // background
           "base-200": "#4bc232", // button
