@@ -23,7 +23,7 @@ function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full  shadow-lg transition-transform duration-300 z-10 h-20  bg-[#011eb3]`}
+      className={`fixed top-0 w-full  shadow-lg transition-transform duration-300 z-10 h-20  bg-[#3282B8]`}
     >
       <nav className="flex justify-between items-center p-4">
         <div>
@@ -36,6 +36,9 @@ function Header() {
           </li>
           <li className="mx-4">
             <a href="#about">CHI SIAMO</a>
+          </li>
+          <li className="mx-4">
+            <a href="#services">SERVIZI</a>
           </li>
           <li className="mx-4">
             <a href="#services">PROGETTI</a>

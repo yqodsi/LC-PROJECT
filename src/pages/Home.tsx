@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 // import Hero from "../components/Hero";
 // import Loader from "../components/Loader";
 import { useRef } from "react";
+// import Projects from "../components/Projects";
 
 function Home() {
   const heroSection = useRef(null);
@@ -128,7 +129,11 @@ function Home() {
             </p>
           </div>
         </div>
-        <div className="hero bg-primary  py-5" ref={heroSection}>
+        {/* <Projects /> */}
+        <div
+          className="hero bg-[#272829] text-[#F5F5F5] py-5"
+          ref={heroSection}
+        >
           <div className="hero-content flex-col w-full">
             <span className="text-5xl font-[500] flex justify-center">
               Dall'Idea alla Realtà:
@@ -137,7 +142,7 @@ function Home() {
               Progettazione Elettrica
             </span>
             <div className="w-full flex justify-center items-center flex-col ">
-              <p className="py-6 text-center max-w-3xl">
+              <p className="py-6 text-center max-w-4xl">
                 Benvenuti nel nostro studio di progettazione elettrica, un luogo
                 dove l'energia prende vita e le idee si trasformano in realtà.
                 Siamo un team giovane e dinamico, animato dalla passione per
