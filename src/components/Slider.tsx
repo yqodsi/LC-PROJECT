@@ -13,6 +13,7 @@ export default function MySlider() {
     <Swiper
       spaceBetween={5}
       slidesPerView={1}
+      loop={true}
       //   centeredSlides={true}
       //   centeredSlidesBounds={true}
       modules={[Navigation, Pagination]}
