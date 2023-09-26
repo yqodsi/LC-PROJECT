@@ -23,7 +23,7 @@ function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full  shadow-lg transition-transform duration-300 z-10 h-20 bg-[#0D7377] text-slate-100`}
+      className={`fixed top-0 w-full  shadow-lg transition-transform duration-300 z-10 h-20 bg-[#0D7377] font-semibold text-slate-100`}
     >
       <nav className="flex justify-between  items-center h-full p-4">
         <div>

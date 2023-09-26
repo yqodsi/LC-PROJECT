@@ -134,7 +134,7 @@ function Home() {
             <span className="text-5xl font-[500] flex justify-center">
               Dall'Idea alla Realtà:
             </span>
-            <span className="text-5xl text-[#15ABB0] font-[500] flex justify-center">
+            <span className="text-5xl bg-gradient-to-b from-teal-400 to-lime-300 bg-clip-text text-transparent  font-[500] flex justify-center">
               Progettazione Elettrica
             </span>
             <div className="w-full flex justify-center items-center flex-col ">
