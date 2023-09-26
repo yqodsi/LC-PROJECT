@@ -3,16 +3,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
 import "../App.css";
-import useBreakpoint from "../hooks/useBreakPoint";
+// import useBreakpoint from "../hooks/useBreakPoint";
 export default function MySlider() {
-  const isDesktop = useBreakpoint(1000);
-  const isTablet = useBreakpoint(640);
-  const isMobile = useBreakpoint(375);
+  //   const isDesktop = useBreakpoint(1000);
+  //   const isTablet = useBreakpoint(640);
+  //   const isMobile = useBreakpoint(375);
 
   return (
     <Swiper
       spaceBetween={5}
-      slidesPerView={isDesktop ? 3 : isTablet ? 2 : isMobile ? 1 : 1}
+      slidesPerView={1}
       //   centeredSlides={true}
       //   centeredSlidesBounds={true}
       modules={[Navigation, Pagination]}

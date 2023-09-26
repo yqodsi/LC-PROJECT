@@ -9,14 +9,14 @@ export default {
     themes: [
       {
         mytheme: {
-          primary: "#16161D", // inter miami theme
-          secondary: "#011eb3",
-          accent: "#37cdbe",
-          neutral: "#3d4451",
-          "base-100": "#00000", // background
-          "base-200": "#4bc232", // button
-          // "base-300": "#f9fafe", // button hover
-          "base-content": "#F1F6F9", // text
+          primary: "#a991f7", // This is the color of the primary button
+          secondary: "#f6d860", // This is the color of the secondary button
+          accent: "#146C94", // This is the color of the accent button
+          neutral: "#3d4451", // This is the color of the neutral button
+          "base-100": "#a991f7", // This is the color of the background
+          "--rounded-box": "1rem", // This sets the border radius for large boxes
+          "--rounded-btn": "0.5rem", // This sets the border radius for buttons
+          "--rounded-badge": "1.9rem", // This sets the border radius for badges
         },
       },
       "dark",
