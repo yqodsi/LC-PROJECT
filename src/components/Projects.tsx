@@ -1,20 +1,13 @@
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Slider from "./Slider";
+
 function Projects() {
   return (
-    <div className="flex flex-col items-center py-10 px-[100px]">
-      <p className="text-3xl">ALCUNI NOSTRI PROGETTI</p>
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-      </Swiper>
+    <div className="flex flex-col gap-10 items-center py-10 px-[100px]">
+      <p className="text-3xl font-semibold">ALCUNI NOSTRI PROGETTI</p>
+      <Slider />
+      <p className="text-3xl">E' TEMPO DI INIZIARE UN NUOVO PROGETTO?</p>
+      <button className="btn btn-primary">CONTATTACI ORA</button>
     </div>
   );
 }

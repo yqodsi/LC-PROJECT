@@ -23,9 +23,9 @@ function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full  shadow-lg transition-transform duration-300 z-10 h-20  bg-[#3282B8]`}
+      className={`fixed top-0 w-full  shadow-lg transition-transform duration-300 z-10 h-20 bg-[#3282B8] text-slate-100`}
     >
-      <nav className="flex justify-between  items-center p-4">
+      <nav className="flex justify-between  items-center h-full p-4">
         <div>
           <img width={120} src="/logos/log.png" alt="" className="mr-10" />
         </div>

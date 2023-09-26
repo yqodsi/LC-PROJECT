@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 // import Hero from "../components/Hero";
 // import Loader from "../components/Loader";
 import { useRef } from "react";
-// import Projects from "../components/Projects";
+import Projects from "../components/Projects";
 
 function Home() {
   const heroSection = useRef(null);
@@ -129,7 +129,6 @@ function Home() {
             </p>
           </div>
         </div>
-        {/* <Projects /> */}
         <div
           className="hero bg-[#272829] text-[#F5F5F5] py-5"
           ref={heroSection}
@@ -150,10 +149,12 @@ function Home() {
                 plasmare un futuro in cui l'energia sia sostenibile e
                 accessibile a tutti.
               </p>
-              <button className="btn btn-secondary">Scopri</button>
+              <button className="btn bg-[#3282B8]">Scopri</button>
             </div>
           </div>
         </div>
+        <Projects />
+
         <Footer />
       </div>
     </>

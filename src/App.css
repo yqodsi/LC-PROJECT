@@ -138,3 +138,9 @@
       opacity: 0;
   }
 } */
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #3282B8  !important;
+}
