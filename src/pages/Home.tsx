@@ -1,7 +1,8 @@
 import "../App.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-// import Hero from "../components/Hero";
+import Accordion from "../components/Accordion";
+import Hero from "../components/Hero";
 // import Loader from "../components/Loader";
 import { useRef } from "react";
 import Projects from "../components/Projects";
@@ -23,7 +24,7 @@ function Home() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
       {/* <Loader duration={4000} /> */}
       <div className="containere">
@@ -37,123 +38,9 @@ function Home() {
           }}
           onClick={scrollDown}
         ></div> */}
-
-        <div className="img-accordion ">
-          <div className="accordion-item">
-            <img src="/residence.jpg" alt="" />
-
-            <p className="flex flex-col">
-              {" "}
-              <img style={{ width: "30px" }} src="/logos/blu.png" alt="" />{" "}
-              <span className="main_title">Residenziale</span>
-              <div>PROGETTAZIONE DI IMPIANTI ELETTRICI RESIDENZIALI</div>
-            </p>
-          </div>
-          <div className="accordion-item">
-            <img src="/industry_11zon.jpg" alt="" />
-            <p className="flex flex-col">
-              {" "}
-              <img
-                style={{ width: "30px" }}
-                src="/logos/gialli.png"
-                alt=""
-              />{" "}
-              <span className="main_title">Industriale</span>
-              <div>
-                PROGETTAZIONE DI IMPIANTI ELETTRICI INDUSTRIALI/COMMERCIALI
-              </div>
-            </p>
-          </div>
-          {/* <div className=" accordion-item">
-          <img src="/IMMSITO/Fotovoltaico/pexels-kelly-4320480_11zon.jpg" alt="" />
-          <p>PROGETTAZIONE DI IMPIANTI FOTOVOLTAICI</p>
-        </div> */}
-          <div className="accordion-item">
-            <img src="/fotovol_11zon.jpg" alt="" />
-            <p className="flex flex-col">
-              {" "}
-              <img
-                style={{ width: "30px" }}
-                src="/logos/ROSSO.png"
-                alt=""
-              />{" "}
-              <span className="main_title">Fotovoltaico</span>
-              <div>PROGETTAZIONE DI IMPIANTI FOTOVOLTAICI</div>
-            </p>
-          </div>
-          {/* <div className="accordion-item">
-          <img
-            src="/IMMSITO/Sicurezza/pexels-thomas-windisch-179993_11zon.jpg"
-            alt=""
-          />
-
-          <p>PROGETTAZIONE DI IMPIANTI DI SICUREZZA</p>
-        </div> */}
-
-          <div className="accordion-item">
-            <img src="/security_11zon.jpg" alt="" />
-            <p className="flex flex-col">
-              {" "}
-              <img
-                style={{ width: "30px" }}
-                src="/logos/verde.png"
-                alt=""
-              />{" "}
-              <span className="main_title">Sicurezza</span>
-              <div>PROGETTAZIONE DI IMPIANTI DI SICUREZZA</div>
-            </p>
-          </div>
-          {/* <div className="accordion-item">
-          <img
-            src="/IMMSITO/Incendio/istockphoto-1340874584-170667a_11zon.jpg"
-            alt=""
-          />
-          <p>
-            PROGETTAZIONE DI IMPIANTI DI RIVELAZIONE <br /> E ALLARME INCENDIO
-          </p>
-        </div> */}
-          <div className="accordion-item">
-            <img src="/incendie_11zon.jpg" alt="" />
-            <p className="flex flex-col">
-              {" "}
-              <img
-                style={{ width: "30px" }}
-                src="/logos/nero.png"
-                alt=""
-              />{" "}
-              <span className="main_title">Incendio</span>
-              <div>
-                {" "}
-                PROGETTAZIONE DI IMPIANTI DI RIVELAZIONE E ALLARME INCENDIO
-              </div>
-            </p>
-          </div>
-        </div>
-        <div className="hero bg-white  py-10" ref={heroSection}>
-          <div className=" flex-col w-full text-black">
-            <span className="text-5xl font-[500] flex justify-center">
-              Dall'Idea alla Realtà:
-            </span>
-            <span className="text-5xl bg-gradient-to-b from-teal-400 to-lime-300 bg-clip-text text-transparent  font-[500] flex justify-center">
-              Progettazione Elettrica
-            </span>
-            <div className="w-full flex justify-center items-center flex-col ">
-              <p className="py-6 text-[#146C94] fw-semibold text-center max-w-4xl">
-                Benvenuti nel nostro studio di progettazione elettrica, un luogo
-                dove l'energia prende vita e le idee si trasformano in realtà.
-                Siamo un team giovane e dinamico, animato dalla passione per
-                l'innovazione nell'ambito energetico. La nostra missione é
-                plasmare un futuro in cui l'energia sia sostenibile e
-                accessibile a tutti.
-              </p>
-              <button className="btn text-white border-0 bg-[#146C94] hover:bg-[#146b94a9]">
-                Scopri
-              </button>
-            </div>
-          </div>
-        </div>
+        <Hero />
+        <Accordion />
         <Projects />
-
         <Footer />
       </div>
     </>
