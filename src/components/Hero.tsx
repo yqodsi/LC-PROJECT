@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -7,6 +7,12 @@ const navigation = [
   { name: "Features", href: "#" },
   { name: "Marketplace", href: "#" },
   { name: "Company", href: "#" },
+];
+
+const backgroundImages = [
+  "url(IMMSITO/Capannone/1.jpg)",
+  "url(IMMSITO/Capannone/2.jpg)",
+  "url(IMMSITO/Capannone/3.jpg)",
 ];
 
 /*   <Link to="/DDD">HOME</Link>
@@ -25,6 +31,22 @@ const navigation = [
 */
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [bgImageIndex, setBgImageIndex] = useState(0);
+
+  const updateBackgroundImage = () => {
+    setBgImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(updateBackgroundImage, 5000);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const heroStyle = {
+    backgroundImage: backgroundImages[bgImageIndex],
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  };
 
   return (
     <div className="bg-blue-200">
@@ -122,7 +144,7 @@ export default function Example() {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 pt-14 lg:px-8 " style={heroStyle}>
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
