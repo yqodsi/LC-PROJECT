@@ -1,14 +1,14 @@
 import "../App.css";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Accordion from "../components/Accordion";
 import Hero from "../components/Hero";
 // import Loader from "../components/Loader";
-import { useRef } from "react";
+// import { useRef } from "react";
 import Projects from "../components/Projects";
 
 function Home() {
-  const heroSection = useRef(null);
+  // const heroSection = useRef(null);
   // const scrollDown = () => {
   //   const section = heroSection.current as HTMLElement | null;
   //   if (section) {
