@@ -46,6 +46,18 @@ export default function Example() {
     backgroundImage: backgroundImages[bgImageIndex],
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    position: "relative",
+  };
+
+  const overlayStyle = {
+    content: "",
+    background: "rgba(0, 0, 0, 0.7)", // Adjust the opacity here (0.5 for 50% opacity)
+    position: "absolute",
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    zIndex: -1,
   };
 
   return (
@@ -145,6 +157,8 @@ export default function Example() {
       </header>
 
       <div className="relative isolate px-6 pt-14 lg:px-8 " style={heroStyle}>
+        {/* <div></div> */}
+        <div style={overlayStyle}></div>
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -168,13 +182,13 @@ export default function Example() {
             </div>
           </div> */}
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl">
               Dall'Idea alla Realtà:
             </h1>
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl">
               Progettazione Elettrica
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-400">
               Benvenuti nel nostro studio di progettazione elettrica, un luogo
               dove l'energia prende vita e le idee si trasformano in realtà.
               Siamo un team giovane e dinamico, animato dalla passione per
