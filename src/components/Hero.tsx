@@ -47,7 +47,7 @@ export default function Example() {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     position: "relative",
-  };
+  } as React.CSSProperties;
 
   const overlayStyle = {
     content: "",
@@ -58,7 +58,7 @@ export default function Example() {
     bottom: 0,
     left: 0,
     zIndex: -1,
-  };
+  } as React.CSSProperties;
 
   return (
     <div className="bg-blue-200">
