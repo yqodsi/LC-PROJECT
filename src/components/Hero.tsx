@@ -44,11 +44,11 @@ export default function Example() {
   //   }
   // };
 
-  // Initialize a counter for loaded images
-  let imagesLoaded = 0;
-  const updateBackgroundImage = () => {
-    setBgImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-  };
+  // // Initialize a counter for loaded images
+  // let imagesLoaded = 0;
+  // const updateBackgroundImage = () => {
+  //   setBgImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+  // };
 
   useEffect(() => {
     const intervalId = setInterval(updateBackgroundImage, 5000);
