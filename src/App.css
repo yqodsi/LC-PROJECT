@@ -147,3 +147,12 @@ font-family: 'Ubuntu', sans-serif; */
 .swiper-button-next {
   color: #3282B8  !important;
 }
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

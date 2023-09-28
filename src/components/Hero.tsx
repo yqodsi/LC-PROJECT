@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
+import "../App.css";
 const navigation = [
   { name: "Product", href: "#" },
   { name: "Features", href: "#" },
@@ -32,7 +32,20 @@ const backgroundImages = [
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [bgImageIndex, setBgImageIndex] = useState(0);
+  // const [loading , setLoading] = useState(true);
 
+  // Function to handle image load
+  // const handleImageLoad = () => {
+  //   // Check if all images have loaded
+  //   // In this example, we assume you have three images to load
+  //   // Adjust this according to your actual image count
+  //   if (imagesLoaded === 3) {
+  //     setLoading(false); // All images have loaded
+  //   }
+  // };
+
+  // Initialize a counter for loaded images
+  let imagesLoaded = 0;
   const updateBackgroundImage = () => {
     setBgImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
   };
@@ -47,6 +60,7 @@ export default function Example() {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     position: "relative",
+    animation: "slide-in 2s ease-in-out forwards",
   } as React.CSSProperties;
 
   const overlayStyle = {
