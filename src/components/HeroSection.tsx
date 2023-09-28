@@ -6,10 +6,11 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import "../App.css";
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Home", href: "#" },
+  { name: "Chi siamo", href: "#" },
+  { name: "Progetti", href: "#" },
+  { name: "Contatti", href: "#" },
+  // { name: "Company", href: "#" },
 ];
 function HeroSection() {
   const images = [
@@ -29,7 +30,7 @@ function HeroSection() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img className="h-8 w-auto" src="/logos/nero.png" alt="" />
+              <img className="h-12 w-auto" src="/logos/log.png" alt="" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -56,8 +57,11 @@ function HeroSection() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="#"
-              className="text-sm font-semibold leading-6 text-gray-200"
-            ></a>
+              className="text-sm flex flex-col font-semibold leading-6 text-gray-200"
+            >
+              <span>info@studioelettrotecnico</span>
+              <span>+39 333 333 3333</span>
+            </a>
           </div>
         </nav>
         <Dialog
@@ -71,11 +75,7 @@ function HeroSection() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
+                <img className="h-8 w-auto" src="/logos/logo-of.png" alt="" />
               </a>
               <button
                 type="button"
@@ -117,9 +117,9 @@ function HeroSection() {
         infiniteLoop={true}
         showThumbs={false}
         showStatus={false}
-        interval={5000}
+        interval={4000}
         swipeable={true}
-        showArrows={true}
+        showArrows={false}
       >
         {images.map((image, index) => (
           <div key={index} className="carousel-image">
@@ -158,7 +158,7 @@ function HeroSection() {
               <h1 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl">
                 Progettazione Elettrica
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-400">
+              <p className="mt-6 text-lg leading-7 text-gray-400">
                 Benvenuti nel nostro studio di progettazione elettrica, un luogo
                 dove l'energia prende vita e le idee si trasformano in realtà.
                 Siamo un team giovane e dinamico, animato dalla passione per
