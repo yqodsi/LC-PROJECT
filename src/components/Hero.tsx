@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import "../App.css";
@@ -31,7 +31,7 @@ const backgroundImages = [
 */
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [bgImageIndex, setBgImageIndex] = useState(0);
+  // const [bgImageIndex, setBgImageIndex] = useState(0);
   // const [loading , setLoading] = useState(true);
 
   // Function to handle image load
@@ -50,10 +50,10 @@ export default function Example() {
   //   setBgImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
   // };
 
-  useEffect(() => {
-    const intervalId = setInterval(updateBackgroundImage, 5000);
-    return () => clearInterval(intervalId);
-  }, []);
+  // useEffect(() => {
+  //   const intervalId = setInterval(updateBackgroundImage, 5000);
+  //   return () => clearInterval(intervalId);
+  // }, []);
 
   const heroStyle = {
     backgroundImage: backgroundImages[bgImageIndex],
