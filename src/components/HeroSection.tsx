@@ -152,10 +152,10 @@ function HeroSection() {
             </div>
           </div> */}
             <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl">
+              <h1 className="text-4xl font-bold tracking-tighter text-gray-200 sm:text-6xl">
                 Dall'Idea alla Realtà:
               </h1>
-              <h1 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl">
+              <h1 className="text-4xl font-bold tracking-tighter text-gray-200 sm:text-6xl">
                 Progettazione Elettrica
               </h1>
               <p className="mt-6 text-lg leading-7 text-gray-400">
