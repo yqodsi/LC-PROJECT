@@ -33,7 +33,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha value for darkness */
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for darkness */
 }
 
 .hero-content {
@@ -52,3 +52,19 @@ body {
   padding: 0;
   height: 100%;
 }
+
+.carousel .control-dots {
+  display: none; /* Hide the little dots */
+}
+
+.hero-header-sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /* height: 80px; Set a specific height */
+  transition: background-color 0.3s ease; /* Add a transition */
+ /* Background color for sticky header */
+  /* padding: 20px; Adjust as needed */
+  z-index: 99; /* Ensure the sticky header is above the carousel */
+}
+

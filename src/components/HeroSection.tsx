@@ -1,10 +1,12 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../assets/HeroSection.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import "../App.css";
+import throttle from "lodash/throttle";
+
 const navigation = [
   { name: "Home", href: "#" },
   { name: "Chi siamo", href: "#" },
@@ -19,18 +21,44 @@ function HeroSection() {
     "/IMMSITO/Capannone/3.jpg",
   ];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = throttle(() => {
+      if (window.scrollY > 100) {
+        setHasScrolled(true);
+      } else {
+        setHasScrolled(false);
+      }
+    }, 100); // Adjust the throttle delay as needed
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="hero-container">
-      <header className="absolute inset-x-0 top-0 z-50">
+      <header
+        className={` hero-header-sticky text-gray-200 scrolled transition-all ${
+          hasScrolled
+            ? "bg-white text-gray-900  duration-600"
+            : " duration-600 " // Apply the background color when scrolled
+        }`}
+      >
         <nav
-          className="flex items-center justify-between p-6 lg:px-8"
+          className="flex items-center justify-between  lg:px-8"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img className="h-12 w-auto" src="/logos/log.png" alt="" />
+              {hasScrolled ? (
+                <img className="h-20 w-auto" src="/logos/log-nero.png" alt="" />
+              ) : (
+                <img className="h-20 w-auto" src="/logos/log.png" alt="" />
+              )}
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -48,7 +76,7 @@ function HeroSection() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-200"
+                className="text-sm font-semibold leading-6"
               >
                 {item.name}
               </a>
@@ -57,7 +85,7 @@ function HeroSection() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="#"
-              className="text-sm flex flex-col font-semibold leading-6 text-gray-200"
+              className="text-sm flex flex-col font-semibold leading-6"
             >
               <span>info@studioelettrotecnico</span>
               <span>+39 333 333 3333</span>
@@ -117,9 +145,10 @@ function HeroSection() {
         infiniteLoop={true}
         showThumbs={false}
         showStatus={false}
-        interval={4000}
+        interval={5000}
         swipeable={true}
         showArrows={false}
+        transitionTime={1000}
       >
         {images.map((image, index) => (
           <div key={index} className="carousel-image">
@@ -151,14 +180,14 @@ function HeroSection() {
               </a>
             </div>
           </div> */}
-            <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tighter text-gray-200 sm:text-6xl">
+            <div className="">
+              <h1 className="text-3xl font-bold tracking-tighter text-gray-200 sm:text-5xl">
                 Dall'Idea alla Realtà:
               </h1>
-              <h1 className="text-4xl font-bold tracking-tighter text-gray-200 sm:text-6xl">
+              <h1 className="text-2xl font-bold tracking-tighter text-gray-200 sm:text-4xl">
                 Progettazione Elettrica
               </h1>
-              <p className="mt-6 text-lg leading-7 text-gray-400">
+              <p className="mt-6 text-sm leading-7 text-gray-300">
                 Benvenuti nel nostro studio di progettazione elettrica, un luogo
                 dove l'energia prende vita e le idee si trasformano in realtà.
                 Siamo un team giovane e dinamico, animato dalla passione per

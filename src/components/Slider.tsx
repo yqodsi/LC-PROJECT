@@ -18,7 +18,7 @@ export default function MySlider() {
       //   centeredSlidesBounds={true}
       modules={[Navigation, Pagination]}
       navigation={true}
-      className="w-full"
+      className="w-full z-0"
     >
       <SwiperSlide className="flex justify-center">
         <div className="max-w-sm rounded overflow-hidden shadow-lg ">
