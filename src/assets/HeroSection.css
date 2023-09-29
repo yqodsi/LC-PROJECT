@@ -36,7 +36,8 @@
   background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for darkness */
 }
 
-.hero-content {
+.hero-contents {
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;

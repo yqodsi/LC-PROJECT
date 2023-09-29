@@ -39,7 +39,7 @@ function HeroSection() {
           </div>
         ))}
       </Carousel>
-      <div className="hero-content">
+      <div className="hero-contents">
         <div className="relative isolate px-6 pt-14 lg:px-8 ">
           <div
             className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -53,7 +53,7 @@ function HeroSection() {
               }}
             />
           </div>
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
             {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Announcing our next round of funding.{" "}
@@ -63,13 +63,13 @@ function HeroSection() {
               </a>
             </div>
           </div> */}
-            <div className="">
-              <h1 className="text-3xl font-bold tracking-tighter text-gray-200 sm:text-6xl">
-                Dall'Idea alla Realtà:
+            <div className="text-center">
+              <h1 className="text-3xl font-bold tracking-tighter text-gray-200 sm:text-7xl whitespace-pre-line">
+                Dall'Idea alla Realtà: Progettazione Elettrica
               </h1>
-              <h1 className="text-2xl font-bold tracking-tighter text-gray-200 sm:text-5xl">
-                Progettazione Elettrica
-              </h1>
+              {/* <h1 className="text-2xl font-bold tracking-tighter text-gray-200 sm:text-7xl whitespace-nowrap">
+                
+              </h1> */}
               <p className="mt-6 text-sm leading-7 text-gray-300">
                 Benvenuti nel nostro studio di progettazione elettrica, un luogo
                 dove l'energia prende vita e le idee si trasformano in realtà.
