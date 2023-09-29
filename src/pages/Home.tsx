@@ -67,23 +67,23 @@ function Home() {
           onClick={scrollDown}
         ></div> */}
         <header
-          className={` hero-header-sticky text-gray-200 scrolled transition-all z-50 ${
+          className={`shadow hero-header-sticky text-gray-200 scrolled transition-all z-50 ${
             hasScrolled
               ? "bg-white text-gray-900  duration-600"
               : " duration-600 " // Apply the background color when scrolled
           }`}
         >
           <nav
-            className="flex items-center justify-between  lg:px-8"
+            className="flex items-center justify-between  px-8 py-2"
             aria-label="Global"
           >
             <div className="flex lg:flex-1">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                 {hasScrolled ? (
-                  <img className=" h-28" src="/logos/log-nero.png" alt="" />
+                  <img className=" h-16" src="/logos/log-nero.png" alt="" />
                 ) : (
-                  <img className="h-28 " src="/logos/log.png" alt="" />
+                  <img className="h-16 " src="/logos/log.png" alt="" />
                 )}
               </a>
             </div>
