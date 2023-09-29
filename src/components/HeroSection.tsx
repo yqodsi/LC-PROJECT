@@ -55,9 +55,9 @@ function HeroSection() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               {hasScrolled ? (
-                <img className="h-20 w-auto" src="/logos/log-nero.png" alt="" />
+                <img className="h-24 w-auto" src="/logos/log-nero.png" alt="" />
               ) : (
-                <img className="h-20 w-auto" src="/logos/log.png" alt="" />
+                <img className="h-24 w-auto" src="/logos/log.png" alt="" />
               )}
             </a>
           </div>
