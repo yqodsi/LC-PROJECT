@@ -81,14 +81,9 @@ function Home() {
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                 {hasScrolled ? (
-                  <img
-                    width={30}
-                    className=" w-auto"
-                    src="/logos/log-nero.png"
-                    alt=""
-                  />
+                  <img className=" h-28" src="/logos/log-nero.png" alt="" />
                 ) : (
-                  <img className=" w-auto" src="/logos/log.png" alt="" />
+                  <img className="h-28 " src="/logos/log.png" alt="" />
                 )}
               </a>
             </div>

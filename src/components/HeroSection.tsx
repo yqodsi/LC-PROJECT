@@ -64,10 +64,10 @@ function HeroSection() {
             </div>
           </div> */}
             <div className="">
-              <h1 className="text-3xl font-bold tracking-tighter text-gray-200 sm:text-5xl">
+              <h1 className="text-3xl font-bold tracking-tighter text-gray-200 sm:text-6xl">
                 Dall'Idea alla Realtà:
               </h1>
-              <h1 className="text-2xl font-bold tracking-tighter text-gray-200 sm:text-4xl">
+              <h1 className="text-2xl font-bold tracking-tighter text-gray-200 sm:text-5xl">
                 Progettazione Elettrica
               </h1>
               <p className="mt-6 text-sm leading-7 text-gray-300">
