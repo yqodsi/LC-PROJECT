@@ -64,7 +64,7 @@ function HeroSection() {
             </div>
           </div> */}
             <div className="text-center">
-              <h1 className="text-3xl font-bold tracking-tighter text-gray-200 sm:text-7xl whitespace-pre-line">
+              <h1 className="text-3xl font-semibold tracking-tighter text-gray-200 sm:text-6xl whitespace-pre-line">
                 Dall'Idea alla Realtà: Progettazione Elettrica
               </h1>
               {/* <h1 className="text-2xl font-bold tracking-tighter text-gray-200 sm:text-7xl whitespace-nowrap">
