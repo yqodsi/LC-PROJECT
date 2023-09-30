@@ -3,6 +3,7 @@ import "../App.css";
 import Footer from "../components/Footer";
 import Accordion from "../components/Accordion";
 import HeroSection from "../components/HeroSection";
+import About from "../components/About";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 // import Loader from "../components/Loader";
@@ -174,6 +175,7 @@ function Home() {
             zIndex: 1,
           }}
         >
+          <About />
           <Accordion />
           <Projects />
           <Footer />

@@ -15,6 +15,7 @@ import "../App.css";
 // ];
 function HeroSection() {
   const images = [
+    "/IMMSITO/Capannone/5.jpg",
     "/IMMSITO/Capannone/1.jpg",
     "/IMMSITO/Capannone/2.jpg",
     "/IMMSITO/Capannone/3.jpg",
